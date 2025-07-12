@@ -5,9 +5,9 @@
 - [Дизайн](https://www.figma.com/design/YEuQIpkKqpy4m3olwAtd3v/Luxury-Car-Detailing-Landing-Page--Community-?node-id=2-139&t=tpUWEfg9TMW9uLps-1)
 - [Демо](https://dg0st.github.io/luxurycar_landing)
 
-# Luxury Car Landing — многоформатный шаблон
+# Gaming Platform — многоформатный шаблон
 
-Этот репозиторий содержит несколько реализаций одной целевой страницы **Luxury Car Landing**, включая:
+Этот репозиторий содержит несколько реализаций веб сайта **Gaming Platform**, включая:
 
 - Чистый HTML/SCSS/JS-макет
 - Тема WordPress
