@@ -11,7 +11,6 @@
 
 - Чистый HTML/SCSS/JS-макет
 - Тема WordPress
-- Версия Django
 
 ---
 
@@ -38,16 +37,6 @@ luxurycar_landing/
 1. Перейдите в `wp-theme/`
 2. Скопируйте папку в `wp-content/themes/` вашего сайта WordPress
 3. Активируйте тему через панель администратора
-
-### Django
-
-1. Перейдите в `django-version/`
-2. Установите зависимости:
-
-```bash
-pip install -r requirements.txt
-
-```
 
 ## Особенности
 
