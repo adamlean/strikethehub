@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Название страницы с ключевыми словами</title>
     <meta
       name="description"
       content="Краткое описание страницы с ключевыми словами"
@@ -11,7 +10,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://example.com/" />
 
-    <title>Wishbone+Partners</title>
+    <title>Gaming Platform</title>
 
     <link
       rel="stylesheet"
@@ -21,250 +20,73 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo">Wishbone<span>+Partners</span></div>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-        <button class="button">Get template</button>
-      </nav>
+      <div class="container nav-container">
+        <a href="#" class="logo">Gaming Platform</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+          <a href="#" class="btn-cta">Contact us</a>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h2 class="subheading">Wishbone+Partners</h2>
-              <h1 class="heading">The home of<br />beautiful architecture.</h1>
-              <p class="description">
-                We are an architecture firm with a focus on beautiful but
-                functional design. At its heart, we believe design is about
-                usability and accessibility — these are the guiding principles
-                for our work. Read more about our previous projects, our process
-                and our team below.
-              </p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
-            <div class="hero-image">
-              <img src="./img/hero_image.png" alt="hero image" />
+        <div class="container hero-container">
+          <div class="hero-text">
+            <span class="subtitle">3D game Dev</span>
+            <h1>Work that we<br />produce for our<br /><span>clients</span></h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard.
+            </p>
+            <a href="#" class="btn-primary">Get more details</a>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              src="./assets/img/joy_stick 1.png"
+              alt="Gamepad"
+              class="gamepad-img"
+            />
+            <div class="engines">
+              <img src="./assets/svg/unity 1.svg" alt="Unity" />
+              <img src="./assets/svg/cry 1.svg" alt="CryEngine" />
+              <img src="./assets/svg/unreal 1.svg" alt="Unreal Engine" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="our_firm" id="about">
+      <section class="trending-games">
         <div class="container">
-          <div class="our">
-            <div class="firm-title">
-              <h2>Our firm</h2>
+          <div class="trending-header">
+            <h2>Currently Trending Games</h2>
+            <a href="#" class="see-all">SEE ALL</a>
+          </div>
+
+          <div class="games-grid">
+            <div class="game-card">
+              <img src="./assets/img/game_1.png" alt="Game 1" />
+              <p><i class="fa-solid fa-fire"></i> 40 Followers</p>
             </div>
-            <div class="firm-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                tristique posuere.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                tristique posuere.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                tristique posuere.
-              </p>
-              <div class="firm-image">
-                <img src="./img/firm_image.png" alt="firm image" />
-                <span>Stephen Collier</span>
-                <span>Senior Partner</span>
-              </div>
+            <div class="game-card">
+              <img src="./assets/img/game_2.png" alt="Game 2" />
+              <p><i class="fa-solid fa-fire"></i> 40 Followers</p>
+            </div>
+            <div class="game-card">
+              <img src="./assets/img/game_3.png" alt="Game 3" />
+              <p><i class="fa-solid fa-fire"></i> 40 Followers</p>
+            </div>
+            <div class="game-card">
+              <img src="./assets/img/game_4.png" alt="Game 4" />
+              <p><i class="fa-solid fa-fire"></i> 40 Followers</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="frame">
-        <div class="frame-wrapper">
-          <img src="./img/frame_image1.png" alt="frame image" />
-        </div>
-      </section>
-
-      <section class="process">
-        <div class="container">
-          <div class="our-process">
-            <div class="process-title">
-              <h2>How we do what we do.</h2>
-              <p>Our process</p>
-            </div>
-            <div class="process-content">
-              <div class="process-step">
-                <div class="step-image">
-                  <img src="./img/sketching.png" alt="step image" />
-                </div>
-                <h2>Sketching</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  ut tristique libero. Nulla luctus sapien ac arcu tempor, vitae
-                  tempor leo iaculis.
-                </p>
-              </div>
-              <div class="process-step">
-                <div class="step-image">
-                  <img src="./img/finalizing.png" alt="step image" />
-                </div>
-                <h2>Finalizing</h2>
-                <p>
-                  Adipiscing elit. Nulla ut tristique libero. Nulla vitae tempor
-                  leo iaculis luctus sapien ac arcu tempor, vitae.
-                </p>
-              </div>
-              <div class="process-step">
-                <div class="step-image">
-                  <img src="./img/building.png" alt="step image" />
-                </div>
-                <h2>Building</h2>
-                <p>
-                  Nulla ut tristique libero. Lorem ipsum ut tristique libero.
-                  Nulla luctus sapien ac arcu tempor, vitae lorem ipsum dolor
-                  leo iaculis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="frame">
-        <div class="frame-wrapper">
-          <img src="./img/frame_image2.png" alt="frame image" />
-        </div>
-      </section>
-
-      <section class="customers">
-        <div class="container">
-          <div class="customers-block">
-            <div class="customers-textarea">
-              <div class="customers-title">
-                <h2>Happy customers.</h2>
-                <p>prior clients</p>
-              </div>
-              <div class="customers-text">
-                <p>
-                  Morbi neque ex, condimentum dapibus congue et, vulputate ut
-                  ligula. Vestibulum sit amet urna turpis. Mauris euismod elit
-                  et nisi ultrices, ut faucibus orci tincidunt.
-                </p>
-              </div>
-            </div>
-            <div class="customers-image">
-              <img src="./img/customer_1.png" alt="frame image" />
-              <img src="./img/customer_2.png" alt="frame image" />
-              <img src="./img/customer_3.png" alt="frame image" />
-              <img src="./img/customer_4.png" alt="frame image" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="frame">
-        <div class="frame-wrapper">
-          <img src="./img/frame_image3.png" alt="frame image" />
-        </div>
-      </section>
-
-      <section class="projects" id="projects">
-        <div class="container">
-          <div class="projects-block">
-            <div class="projects-title">
-              <h2>Featured projects.</h2>
-              <p>
-                Some of the latest and greatest projects from us<br />
-                here at Wishbone+Partners.
-              </p>
-            </div>
-            <div class="projects-image">
-              <img src="./img/project_1.png" alt="project image" />
-              <img src="./img/project_2.png" alt="project image" />
-              <img src="./img/project_3.png" alt="project image" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="team-section" id="team">
-        <div class="container">
-          <div class="team-area">
-            <div class="team-content">
-              <h2>Meet our team</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis.
-              </p>
-              <a href="#" class="see-team">See team</a>
-            </div>
-
-            <div class="team-grid">
-              <div class="team-member">
-                <img src="./img/Stephen Collier.png" alt="Stephen Collier" />
-                <div>
-                  <h4>Stephen Collier</h4>
-                  <p>Senior Partner</p>
-                </div>
-              </div>
-
-              <div class="team-member">
-                <img src="./img/Nolan Peters.png" alt="Nolan Peters" />
-                <div>
-                  <h4>Nolan Peters</h4>
-                  <p>Associate</p>
-                </div>
-              </div>
-
-              <div class="team-member">
-                <img src="./img/Ferris Wonder.png" alt="Ferris Wonder" />
-                <div>
-                  <h4>Ferris Wonder</h4>
-                  <p>Associate Partner</p>
-                </div>
-              </div>
-
-              <div class="team-member">
-                <img src="./img/Aria Stone.png" alt="Aria Stone" />
-                <div>
-                  <h4>Aria Stone</h4>
-                  <p>Senior Partner</p>
-                </div>
-              </div>
-
-              <div class="team-member">
-                <img src="./img/Niko Ferry.png" alt="Niko Ferry" />
-                <div>
-                  <h4>Niko Ferry</h4>
-                  <p>Partner</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="frame">
-        <div class="frame-wrapper">
-          <img src="./img/frame_image4.png" alt="frame image" />
         </div>
       </section>
     </main>

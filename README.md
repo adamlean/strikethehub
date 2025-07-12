@@ -2,8 +2,8 @@
 
 ![Luxury Car](./assets/img/screenshot.png)
 
-- [Дизайн](https://www.figma.com/design/YEuQIpkKqpy4m3olwAtd3v/Luxury-Car-Detailing-Landing-Page--Community-?node-id=2-139&t=tpUWEfg9TMW9uLps-1)
-- [Демо](https://dg0st.github.io/luxurycar_landing)
+- [Дизайн](https://www.figma.com/design/oTn1jPS3r0KrnWPSVU4PUD/Gaming-Platform---Web-Design--Community-?node-id=1-4&t=l3WOeBCulwbBiSI7-1)
+- [Демо](https://dg0st.github.io/gameplatforn/)
 
 # Gaming Platform — многоформатный шаблон
 
