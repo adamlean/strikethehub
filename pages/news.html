@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../assets/styles/style.css" />
   </head>
   <body>
@@ -35,28 +36,189 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-container">
-          <div class="hero-text">
-            <span class="subtitle">3D game Dev</span>
-            <h1>Work that we<br />produce for our<br /><span>clients</span></h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard.
-            </p>
-            <a href="#" class="btn-primary">Get more details</a>
-          </div>
+      <section class="bg-black text-white py-16 px-4">
+        <div class="container">
+          <div class="max-w-7xl mx-auto">
+            <!-- Хлебные крошки -->
+            <nav class="text-sm text-gray-400 mb-4">
+              <span>Home</span> &gt; <span class="text-orange-500">News</span>
+            </nav>
 
-          <div class="hero-visual">
-            <img
-              src="./assets/img/joy_stick 1.png"
-              alt="Gamepad"
-              class="gamepad-img"
-            />
-            <div class="engines">
-              <img src="./assets/svg/unity 1.svg" alt="Unity" />
-              <img src="./assets/svg/cry 1.svg" alt="CryEngine" />
-              <img src="./assets/svg/unreal 1.svg" alt="Unreal Engine" />
+            <!-- Заголовок -->
+            <div class="text-center mb-8">
+              <h1 class="text-3xl md:text-4xl font-bold mb-2">
+                Lorem Ipsum is simply dummy text of the printing and.
+              </h1>
+              <p class="text-gray-400">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+
+            <!-- Поиск -->
+            <div class="flex justify-center mb-10">
+              <input
+                type="text"
+                placeholder="Search"
+                class="bg-[#1e1e1e] px-4 py-2 rounded-md w-full max-w-md text-white outline-none"
+              />
+            </div>
+
+            <!-- Двухколоночный блок -->
+            <div class="grid md:grid-cols-3 gap-10">
+              <!-- Левая колонка (две трети ширины) -->
+              <div class="md:col-span-2 space-y-10">
+                <!-- Крупная статья -->
+                <div class="flex flex-col space-y-4">
+                  <img
+                    src="../assets/img/post-image-1.png"
+                    alt=""
+                    class="rounded-lg"
+                  />
+                  <div class="flex gap-4 text-sm text-gray-400">
+                    <span class="bg-blue-600 px-3 py-1 rounded-full text-white"
+                      >John smash</span
+                    >
+                    <span>20min</span>
+                  </div>
+                  <h2 class="text-xl font-bold">
+                    Lorem Ipsum is simply dummy text dummy text
+                  </h2>
+                  <p class="text-gray-400 text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry...
+                  </p>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                  <img
+                    src="../assets/img/post-image-3.png"
+                    alt=""
+                    class="rounded-lg"
+                  />
+                  <div class="flex gap-4 text-sm text-gray-400">
+                    <span class="bg-blue-600 px-3 py-1 rounded-full text-white"
+                      >John smash</span
+                    >
+                    <span>20min</span>
+                  </div>
+                  <h2 class="text-xl font-bold">
+                    Lorem Ipsum is simply dummy text dummy text
+                  </h2>
+                  <p class="text-gray-400 text-sm">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry...
+                  </p>
+                </div>
+
+                <!-- Повторить блок еще раз для следующей статьи -->
+              </div>
+
+              <!-- Правая колонка (одна треть) -->
+              <div class="space-y-6">
+                <!-- Маленькая карточка статьи -->
+                <div class="flex items-start gap-4">
+                  <img
+                    src="../assets/img/post-image-2.png"
+                    alt=""
+                    class="w-24 h-20 object-cover rounded-md"
+                  />
+                  <div class="flex-1">
+                    <div class="flex gap-2 text-xs mb-1">
+                      <span
+                        class="bg-orange-500 text-white px-2 py-0.5 rounded-full"
+                        >John smash</span
+                      >
+                      <span class="text-gray-400">3min</span>
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum is simply dummy text dummy text ?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <img
+                    src="../assets/img/post-image-2.png"
+                    alt=""
+                    class="w-24 h-20 object-cover rounded-md"
+                  />
+                  <div class="flex-1">
+                    <div class="flex gap-2 text-xs mb-1">
+                      <span
+                        class="bg-orange-500 text-white px-2 py-0.5 rounded-full"
+                        >John smash</span
+                      >
+                      <span class="text-gray-400">3min</span>
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum is simply dummy text dummy text ?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <img
+                    src="../assets/img/post-image-2.png"
+                    alt=""
+                    class="w-24 h-20 object-cover rounded-md"
+                  />
+                  <div class="flex-1">
+                    <div class="flex gap-2 text-xs mb-1">
+                      <span
+                        class="bg-orange-500 text-white px-2 py-0.5 rounded-full"
+                        >John smash</span
+                      >
+                      <span class="text-gray-400">3min</span>
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum is simply dummy text dummy text ?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <img
+                    src="../assets/img/post-image-2.png"
+                    alt=""
+                    class="w-24 h-20 object-cover rounded-md"
+                  />
+                  <div class="flex-1">
+                    <div class="flex gap-2 text-xs mb-1">
+                      <span
+                        class="bg-orange-500 text-white px-2 py-0.5 rounded-full"
+                        >John smash</span
+                      >
+                      <span class="text-gray-400">3min</span>
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum is simply dummy text dummy text ?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <img
+                    src="../assets/img/post-image-2.png"
+                    alt=""
+                    class="w-24 h-20 object-cover rounded-md"
+                  />
+                  <div class="flex-1">
+                    <div class="flex gap-2 text-xs mb-1">
+                      <span
+                        class="bg-orange-500 text-white px-2 py-0.5 rounded-full"
+                        >John smash</span
+                      >
+                      <span class="text-gray-400">3min</span>
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum is simply dummy text dummy text ?
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Повторить для остальных -->
+              </div>
             </div>
           </div>
         </div>
