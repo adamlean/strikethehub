@@ -278,9 +278,9 @@ p {
 }
 
 /* Trending Games */
-
+/*
 .trending-games {
-  background: #0d0602; /* или чёрный, как в дизайне */
+  background: #0d0602;
   padding: 60px 0;
   color: #fff;
 }
@@ -338,10 +338,10 @@ p {
 .game-card i {
   margin-right: 6px;
   color: white;
-}
+} */
 
 /* Info Block */
-
+/*
 .info-block {
   padding: 80px 0;
   color: #fff;
@@ -396,10 +396,10 @@ p {
   background-image: radial-gradient(#ff7b00 1px, transparent 1px);
   background-size: 10px 10px;
   opacity: 0.5;
-}
+} */
 
 /* Services */
-
+/*
 .services {
   background: url('../img/service-bgd.png') no-repeat center center;
   background-size: cover;
@@ -494,7 +494,7 @@ p {
   color: orange;
   font-size: 20px;
 }
-
+*/
 /* Projects */
 
 .projects-section {
@@ -550,7 +550,7 @@ p {
 }
 
 /* Subscribe */
-
+/*
 .subscribe-section {
   padding: 60px 0;
 }
@@ -607,9 +607,9 @@ p {
 .subscribe-form button:hover {
   background: #e56e00;
 }
-
-/* Footer 
-
+*/
+/* Footer */
+/*
 .site-footer {
   background: #000;
   color: #fff;

@@ -252,25 +252,38 @@
         </div>
       </section>
 
-      <section class="subscribe-section">
-        <div class="container">
-          <h2>Lorem Ipsum</h2>
-          <p>
+      <section class="py-16">
+        <div class="max-w-[1200px] mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-2">Lorem Ipsum</h2>
+          <p class="text-[#ccc] mb-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
 
-          <div class="subscribe-box">
-            <div class="subscribe-text">
-              <h3>Stay in the loop</h3>
-              <p>
-                Subscribe to receive the latest news and updates about TDA.<br />We
-                promise not to spam you!
+          <div
+            class="bg-[#1a1a1a] rounded-xl p-6 flex flex-wrap justify-between items-center gap-5"
+          >
+            <div class="max-w-lg">
+              <h3 class="text-xl font-semibold mb-2">Stay in the loop</h3>
+              <p class="text-[#ccc]">
+                Subscribe to receive the latest news and updates about TDA.<br />
+                We promise not to spam you!
               </p>
             </div>
-            <form class="subscribe-form">
-              <input type="email" placeholder="Enter email address" required />
-              <button type="submit">Continue</button>
+
+            <form class="flex flex-1 flex-wrap gap-3 min-w-[280px]">
+              <input
+                type="email"
+                placeholder="Enter email address"
+                required
+                class="flex-1 px-4 py-3 rounded-md outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-[#ff7a00] hover:bg-[#e56e00] text-white px-5 py-3 rounded-md transition"
+              >
+                Continue
+              </button>
             </form>
           </div>
         </div>
