@@ -204,7 +204,7 @@
         class="relative bg-cover bg-center text-white text-center py-20 px-5"
         style="background-image: url('../img/service-bgd.png')"
       >
-        <!-- затемнение поверх фона -->
+        <!-- Black Hover -->
         <div class="absolute inset-0 bg-black/60 z-0"></div>
 
         <div class="relative z-10 max-w-[1200px] mx-auto">
@@ -219,9 +219,9 @@
           </p>
 
           <div class="flex flex-col gap-10">
-            <!-- Первая строка -->
+            <!-- First String -->
             <div class="flex flex-wrap justify-between gap-7">
-              <!-- Карточка -->
+              <!-- Card -->
               <div
                 class="flex flex-col items-center max-w-[200px] flex-1 transition-transform hover:-translate-y-1"
               >
@@ -327,50 +327,57 @@
         </div>
       </section>
 
-      <section class="projects-section">
-        <div class="container">
-          <h2 class="section-title">Our Recent Projects</h2>
-          <p class="section-subtitle">
+      <section class="bg-[#0d0d0d] text-white py-20 px-5 text-center">
+        <div class="max-w-[1200px] mx-auto">
+          <h2 class="text-2xl font-bold mb-2">Our Recent Projects</h2>
+          <p class="text-[#aaa] text-base mb-12">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
 
-          <div class="projects-grid">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mb-12"
+          >
             <img
               src="./assets/img/project_1.png"
               alt="Project 1"
-              class="project-img"
+              class="w-full h-[200px] object-cover rounded-xl"
             />
             <img
               src="./assets/img/project_2.png"
               alt="Project 2"
-              class="project-img"
+              class="w-full h-[200px] object-cover rounded-xl"
             />
             <img
               src="./assets/img/project_3.png"
               alt="Project 3"
-              class="project-img"
+              class="w-full h-[200px] object-cover rounded-xl"
             />
             <img
               src="./assets/img/project_4.png"
               alt="Project 4"
-              class="project-img"
+              class="w-full h-[200px] object-cover rounded-xl"
             />
             <img
               src="./assets/img/project_5.png"
               alt="Project 5"
-              class="project-img"
+              class="w-full h-[200px] object-cover rounded-xl"
             />
             <img
               src="./assets/img/project_6.png"
               alt="Project 6"
-              class="project-img"
+              class="w-full h-[200px] object-cover rounded-xl"
             />
           </div>
 
-          <button class="see-all-btn">SEE ALL</button>
+          <button
+            class="bg-[#333] hover:bg-[#555] text-white py-3 px-7 rounded-lg transition"
+          >
+            SEE ALL
+          </button>
         </div>
       </section>
+
       <section class="py-16">
         <div class="max-w-[1200px] mx-auto px-4">
           <h2 class="text-2xl font-bold mb-2">Lorem Ipsum</h2>
