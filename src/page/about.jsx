@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 // Страницы
 const Home = () => (
   <>
+     <Header />
     <Hero />
     <SubscribeSection />
     <Footer />
