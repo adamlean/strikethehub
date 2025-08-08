@@ -11,7 +11,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import SubscribeSection from "./components/SubscribeSection";
 import Footer from "./components/Footer";
 
-// Импорт страниц /
+// Импорт страниц
 import About from "./page/About";
 
 // Другие страницы (временно определим здесь)
