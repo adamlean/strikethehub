@@ -12,16 +12,16 @@ const TrendingGames = () => {
     <section className="bg-[#0d0602] py-16 text-white">
       <div className="container mx-auto px-4">
         
-        {/* Заголовок */}
-        <div className="flex justify-between items-center mb-10">
+        {/* Заголовок 
+         <div className="flex justify-between items-center mb-10">
           <h2 className="text-2xl font-bold">Currently Trending Games</h2>
           <a
             href="#"
             className="bg-[#1c1a19] text-white px-5 py-2 rounded-md font-medium transition-colors duration-300 hover:bg-[#333]"
           >
             SEE ALL
-          </a>
-        </div>
+          </a> 
+        </div>  */}
 
         {/* Карточки игр */}
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
