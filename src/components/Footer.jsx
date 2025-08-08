@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,16 +20,16 @@ const Footer = () => {
           <h4 className="text-lg font-bold mb-4">About us</h4>
           <ul>
             <li className="mb-2">
-              <a href="#" className="text-gray-300 hover:underline">Zeux</a>
+              <Link to="/zeux" className="text-gray-300 hover:underline">Zeux</Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-gray-300 hover:underline">Portfolio</a>
+              <Link to="/portfolio" className="text-gray-300 hover:underline">Portfolio</Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-gray-300 hover:underline">Careers</a>
+              <Link to="/careers" className="text-gray-300 hover:underline">Careers</Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-gray-300 hover:underline">Contact us</a>
+              <Link to="/contact" className="text-gray-300 hover:underline">Contact us</Link>
             </li>
             <li className="mb-2">
               <a
@@ -55,15 +56,38 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex items-center gap-3 mt-4">
-          {["facebook-f", "instagram", "twitter", "linkedin-in"].map((icon, i) => (
-            <a
-              key={i}
-              href="#"
-              className="w-9 h-9 bg-[#1c1c1c] text-white flex items-center justify-center rounded-full hover:bg-orange-500 hover:text-black transition"
-            >
-              <i className={`fab fa-${icon}`}></i>
-            </a>
-          ))}
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noreferrer"
+            className="w-9 h-9 bg-[#1c1c1c] text-white flex items-center justify-center rounded-full hover:bg-orange-500 hover:text-black transition"
+          >
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer"
+            className="w-9 h-9 bg-[#1c1c1c] text-white flex items-center justify-center rounded-full hover:bg-orange-500 hover:text-black transition"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noreferrer"
+            className="w-9 h-9 bg-[#1c1c1c] text-white flex items-center justify-center rounded-full hover:bg-orange-500 hover:text-black transition"
+          >
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+            className="w-9 h-9 bg-[#1c1c1c] text-white flex items-center justify-center rounded-full hover:bg-orange-500 hover:text-black transition"
+          >
+            <i className="fab fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
 

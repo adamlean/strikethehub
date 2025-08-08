@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -18,12 +19,12 @@ const Hero = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/about"
             className="inline-block mt-6 bg-orange-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 hover:bg-orange-500"
           >
             Get more details
-          </a>
+          </Link>
         </div>
 
         {/* Правая колонка */}
