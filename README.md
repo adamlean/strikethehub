@@ -12,7 +12,7 @@ This repository contains several implementations of the **Gaming Platform** webs
 - Plain HTML/SCSS/JS layout
 - WordPress theme
 
----
+--
 
 ## Author
 
