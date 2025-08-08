@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header";
+import Header from "./components/Header";
 
 // Импортируем новые секции
-import Hero from "./components/hero";
-import TrendingGames from "./components/trendinggames";
-import InfoSection from "./components/infosection";
-import ServicesSection from "./components/services";
-import ProjectsSection from "./components/projects";
-import SubscribeSection from "./components/subscribe";
-import Footer from "./components/footer";
+import Hero from "./components/Hero";
+import TrendingGames from "./components/TrendingGames";
+import InfoSection from "./components/InfoSection";
+import ServicesSection from "./components/ServicesSection";
+import ProjectsSection from "./components/ProjectsSection";
+import SubscribeSection from "./components/SubscribeSection";
+import Footer from "./components/Footer";
 
 // Страницы
 const Home = () => (

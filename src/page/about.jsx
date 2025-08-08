@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Компоненты
-import Header from "../components/header";
-import Hero from "../components/hero";
-import SubscribeSection from "../components/subscribe";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import SubscribeSection from "../components/SubscribeSection";
+import Footer from "../components/Footer";
 
 // Страницы
 const Home = () => (
