@@ -1,8 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 
-// Импорт секций домашней страницы
 import Hero from "./components/Hero";
 import TrendingGames from "./components/TrendingGames";
 import InfoSection from "./components/InfoSection";
@@ -11,7 +10,6 @@ import ProjectsSection from "./components/ProjectsSection";
 import SubscribeSection from "./components/SubscribeSection";
 import Footer from "./components/Footer";
 
-// Импорт страниц
 import About from "./page/About";
 import News from "./page/News";
 import Services from "./page/Services";
@@ -31,9 +29,39 @@ const Home = () => (
   </>
 );
 
+// Компонент для управления заголовком
+function TitleManager() {
+  const location = useLocation();
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/":
+        document.title = "Home — GamePlatform";
+        break;
+      case "/about":
+        document.title = "About — GamePlatform";
+        break;
+      case "/services":
+        document.title = "Portfolio — GamePlatform";
+        break;
+      case "/news":
+        document.title = "News — GamePlatform";
+        break;
+      case "/contact":
+        document.title = "Contact — GamePlatform";
+        break;
+      default:
+        document.title = "GamePlatform";
+    }
+  }, [location]);
+
+  return null; // Этот компонент ничего не рендерит
+}
+
 function App() {
   return (
     <Router>
+      <TitleManager /> {/* Подключаем управление заголовком */}
       <div className="bg-black min-h-screen">
         <div className="container mx-auto py-10">
           <Routes>
