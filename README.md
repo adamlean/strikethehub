@@ -1,4 +1,4 @@
-# Gaming Platform
+# Gaming Platform | React Gaming Portal
 
 ![Gaming Platform](screenshot.png)
 
@@ -7,7 +7,30 @@
 
 # Gaming Platform — Videogame Portal Website
 
-This repository contains several implementations of the **Gaming Platform** website, including React.
+Implementation of a multi-page portal dedicated to video games in React
+
+---
+
+**Run:**
+
+```bash
+cd react
+npm install
+npm start
+```
+
+---
+
+## 🚀 How to Use
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/adamlean/gameplatforn.git
+```
+
+2. Pick the folder for your project type.
+3. Run or integrate into your environment.
 
 ---
 
