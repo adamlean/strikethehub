@@ -13,11 +13,9 @@ import Footer from "./components/Footer";
 
 // Импорт страниц
 import About from "./page/About";
-
-// Другие страницы (временно определим здесь)
-const Services = () => <h1 className="text-white">Portfolio</h1>;
-const News = () => <h1 className="text-white">News</h1>;
-const Contact = () => <h1 className="text-white">Contact Us</h1>;
+import News from "./page/News";
+import Services from "./page/Services";
+import Contact from "./page/Contact";
 
 // Главная страница
 const Home = () => (
@@ -36,7 +34,7 @@ const Home = () => (
 function App() {
   return (
     <Router>
-      <div className="bg-gray-900 min-h-screen">
+      <div className="bg-black min-h-screen">
         <div className="container mx-auto py-10">
           <Routes>
             <Route path="/" element={<Home />} />
