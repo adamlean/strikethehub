@@ -7,10 +7,7 @@
 
 # Gaming Platform — Videogame Portal Website
 
-This repository contains several implementations of the **Gaming Platform** website, including:
-
-- Plain HTML/SCSS/JS layout
-- WordPress theme
+This repository contains several implementations of the **Gaming Platform** website, including React.
 
 ---
 
