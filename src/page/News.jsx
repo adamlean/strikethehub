@@ -1,7 +1,7 @@
 // src/page/About.jsx
 import React, { useEffect } from "react";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import BlogSection from "../components/BlogSection";
 import SubscribeSection from "../components/SubscribeSection";
 import Footer from "../components/Footer";
 
@@ -13,7 +13,7 @@ const News = () => {
   return (
     <>
       <Header />
-      <Hero />
+      <BlogSection />
       <SubscribeSection />
       <Footer />
     </>
