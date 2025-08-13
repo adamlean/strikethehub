@@ -1,7 +1,6 @@
 // src/page/About.jsx
 import React, { useEffect } from "react";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 import StatsSection from "../components/StatsSection";
 import VideoWithText from "../components/VideoWithText";
 import ReviewsSection from "../components/ReviewsSection";
@@ -17,7 +16,6 @@ const Services = () => {
   return (
     <>
       <Header />
-      <Hero />
       <StatsSection />
       <VideoWithText />
       <ReviewsSection />

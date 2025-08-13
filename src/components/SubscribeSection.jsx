@@ -2,7 +2,7 @@ import React from "react";
 
 const SubscribeSection = () => {
   return (
-    <section className="py-16">
+    <section className="bg-black py-16">
       <div className="max-w-[1200px] mx-auto px-4">
         <h2 className="text-2xl font-bold mb-2">Lorem Ipsum</h2>
         <p className="text-[#ccc] mb-8">

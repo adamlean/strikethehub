@@ -2,7 +2,7 @@ import React from "react";
 
 const InfoSection = () => {
   return (
-    <section className="py-20 text-white">
+    <section className="bg-[#1a1a1a] py-20 text-white">
       <div className="container mx-auto px-4">
         
         {/* Заголовок */}

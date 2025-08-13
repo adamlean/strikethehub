@@ -10,7 +10,7 @@ const games = [
 
 const TrendingGames = () => {
   return (
-    <section className="bg-[#0d0602] py-16 text-white">
+    <section className="bg-black py-16 text-white">
       <div className="container mx-auto px-4">
         
         {/* Заголовок */}

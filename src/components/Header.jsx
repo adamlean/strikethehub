@@ -1,12 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import LanguageSwitcher from "./LanguageSwitcher"; // импортируем
 
 const Header = () => {
+  const { lang } = useParams(); // получаем текущий язык из URL
+
   return (
     <header className="bg-black py-5">
       <div className="container mx-auto flex justify-between items-center">
         <Link
-          to="/"
+          to={`/${lang}`} // добавляем префикс языка
           className="text-white text-2xl font-bold no-underline"
         >
           Gaming Platform
@@ -16,7 +19,7 @@ const Header = () => {
           <ul className="flex list-none gap-8 m-0 p-0">
             <li>
               <Link
-                to="/"
+                to={`/${lang}`}
                 className="text-white no-underline hover:text-orange-400"
               >
                 Home
@@ -24,7 +27,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/about"
+                to={`/${lang}/about`}
                 className="text-white no-underline hover:text-orange-400"
               >
                 About us
@@ -32,7 +35,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/services"
+                to={`/${lang}/services`}
                 className="text-white no-underline hover:text-orange-400"
               >
                 Portfolio
@@ -40,7 +43,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/news"
+                to={`/${lang}/news`}
                 className="text-white no-underline hover:text-orange-400"
               >
                 News
@@ -49,11 +52,14 @@ const Header = () => {
           </ul>
 
           <Link
-            to="/contact"
+            to={`/${lang}/contact`}
             className="bg-orange-400 text-white font-semibold no-underline py-2 px-5 rounded-lg transition-colors duration-300 hover:bg-orange-500"
           >
             Contact us
           </Link>
+
+          {/* Переключатель языка */}
+          <LanguageSwitcher />
         </nav>
       </div>
     </header>

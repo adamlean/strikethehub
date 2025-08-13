@@ -1,78 +1,81 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route, useNavigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import "./i18n";
 
-import Hero from "./components/Hero";
-import TrendingGames from "./components/TrendingGames";
-import InfoSection from "./components/InfoSection";
-import ServicesSection from "./components/ServicesSection";
-import ProjectsSection from "./components/ProjectsSection";
-import SubscribeSection from "./components/SubscribeSection";
-import Footer from "./components/Footer";
-
+import Home from "./page/Home";
 import About from "./page/About";
 import News from "./page/News";
 import Services from "./page/Services";
 import Contact from "./page/Contact";
 
-// Главная страница
-const Home = () => (
-  <>
-    <Header />
-    <Hero />
-    <TrendingGames />
-    <InfoSection />
-    <ServicesSection />
-    <ProjectsSection />
-    <SubscribeSection />
-    <Footer />
-  </>
-);
+// --- Автоперенаправление по языку ---
+function LanguageRedirect() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const browserLang = (navigator.language || "en").split("-")[0];
+    const supported = ["en", "ru"];
+    const lang = supported.includes(browserLang) ? browserLang : "en";
+    navigate(`/${lang}`, { replace: true });
+  }, [navigate]);
+  return null;
+}
 
-// Компонент для управления заголовком
+// --- Управление title ---
 function TitleManager() {
-  const location = useLocation();
+  const { lang } = useParams();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    switch (location.pathname) {
-      case "/":
-        document.title = "Home — GamePlatform";
-        break;
-      case "/about":
-        document.title = "About — GamePlatform";
-        break;
-      case "/services":
-        document.title = "Portfolio — GamePlatform";
-        break;
-      case "/news":
-        document.title = "News — GamePlatform";
-        break;
-      case "/contact":
-        document.title = "Contact — GamePlatform";
-        break;
-      default:
-        document.title = "GamePlatform";
+    if (lang && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
     }
-  }, [location]);
+    const titles = {
+      "/": t("homeTitle"),
+      "/about": t("aboutTitle"),
+      "/services": t("servicesTitle"),
+      "/news": t("newsTitle"),
+      "/contact": t("contactTitle"),
+    };
+    const pathWithoutLang = window.location.pathname.replace(/^\/[a-z]{2}/, "") || "/";
+    document.title = titles[pathWithoutLang] || "GamePlatform";
+  }, [lang, t, i18n]);
 
-  return null; // Этот компонент ничего не рендерит
+  return null;
+}
+
+// --- Маршруты для выбранного языка ---
+function LangRoutes() {
+  const { lang } = useParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!["en", "ru"].includes(lang)) {
+      navigate("/en", { replace: true });
+    }
+  }, [lang, navigate]);
+
+  return (
+    <>
+      <TitleManager />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
+  );
 }
 
 function App() {
   return (
     <Router>
-      <TitleManager /> {/* Подключаем управление заголовком */}
-      <div className="bg-black min-h-screen">
-        <div className="container mx-auto py-10">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<LanguageRedirect />} />
+        <Route path="/:lang/*" element={<LangRoutes />} />
+      </Routes>
     </Router>
   );
 }

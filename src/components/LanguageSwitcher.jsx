@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div style={{ display: "flex", gap: "8px" }}>
+    <div style={{ display: "flex", gap: "8px", color: "white" }}>
       <button onClick={() => switchLanguage("en")} disabled={lang === "en"}>
         EN
       </button>
