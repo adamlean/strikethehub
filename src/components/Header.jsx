@@ -12,7 +12,7 @@ const Header = () => {
           to={`/${lang}`} // добавляем префикс языка
           className="text-white text-2xl font-bold no-underline"
         >
-          Gaming Platform
+          Strike The Hub
         </Link>
 
         <nav className="flex items-center gap-8">

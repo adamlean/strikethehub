@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-wrap gap-10 justify-between pb-10 border-b border-[#333] px-4">
         {/* Col 1 */}
         <div className="flex-1 min-w-[200px]">
-          <h4 className="text-lg font-bold mb-4">LOGO</h4>
+          <h4 className="text-lg font-bold mb-4">Strike The Hub</h4>
           <p className="mb-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -93,7 +93,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center py-5 text-sm text-gray-500">
-        <p>Copyright © 2021 Lorem All rights Reserved</p>
+        <p>Copyright © 2025. Strike The Hub. All rights Reserved</p>
       </div>
     </footer>
   );
