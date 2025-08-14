@@ -1,11 +1,11 @@
-# Gaming Platform | React Gaming Portal
+# Strike The Hub | React Gaming Portal
 
 ![Gaming Platform](screenshot.png)
 
 - [Design](https://www.figma.com/design/oTn1jPS3r0KrnWPSVU4PUD/Gaming-Platform---Web-Design--Community-?node-id=1-4&t=l3WOeBCulwbBiSI7-1)
 - [Demo](https://gameplatforn.netlify.app/)
 
-# Gaming Platform — Videogame Portal Website
+# About
 
 Implementation of a multi-page portal dedicated to video games in React
 
@@ -26,7 +26,7 @@ npm start
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/adamlean/gameplatforn.git
+git clone https://github.com/adamlean/strikethehub.git
 ```
 
 2. Pick the folder for your project type.
