@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "Contact — GamePlatform";
+    document.title = "Contact — Strike The Hub";
   }, []);
 
   return (

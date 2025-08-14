@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const About = () => {
   useEffect(() => {
-    document.title = "About — GamePlatform";
+    document.title = "About — Strike The Hub";
   }, []);
 
   return (

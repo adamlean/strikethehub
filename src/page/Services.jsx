@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 
 const Services = () => {
   useEffect(() => {
-    document.title = "Portfolio — GamePlatform";
+    document.title = "Portfolio — Strike The Hub";
   }, []);
 
   return (

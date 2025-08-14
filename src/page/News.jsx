@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const News = () => {
   useEffect(() => {
-    document.title = "News — GamePlatform";
+    document.title = "News — Strike The Hub";
   }, []);
 
   return (
