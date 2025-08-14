@@ -147,7 +147,3 @@ npm audit fix
 
 - Keep a `_redirects` file for SPA routing on Netlify.
 - Document each major fix here before forgetting the context.
-
-```
-
-```
