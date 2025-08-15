@@ -1,8 +1,15 @@
 {
   "homeTitle": "Home — Strike The Hub",
-  "aboutTitle": "About Us — Strike The Hub",
-  "servicesTitle": "Services — Strike The Hub",
+  "aboutTitle": "About — Strike The Hub",
+  "servicesTitle": "Portfolio — Strike The Hub",
   "newsTitle": "News — Strike The Hub",
-  "contactTitle": "Contact Us — Strike The Hub",
-  "hello": "Welcome to Strike The Hub"
+  "contactTitle": "Contact — Strike The Hub",
+  "siteName": "Strike The Hub",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Portfolio",
+    "news": "News",
+    "contact": "Contact"
+  }
 }

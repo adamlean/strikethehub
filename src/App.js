@@ -9,6 +9,8 @@ import News from "./page/News";
 import Services from "./page/Services";
 import Contact from "./page/Contact";
 
+import PostPage from "./page/PostPage"; 
+
 // --- Автоперенаправление по языку ---
 function LanguageRedirect() {
   const navigate = useNavigate();
@@ -75,9 +77,13 @@ function App() {
       <Routes>
         <Route path="/" element={<LanguageRedirect />} />
         <Route path="/:lang/*" element={<LangRoutes />} />
+
+         <Route path="/:lang/news" element={<News />} />
+        <Route path="/:lang/news/:id" element={<PostPage />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
