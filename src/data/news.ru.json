@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Первый",
+    "title": "Новый Painkiller выйдет в 2025 году",
     "excerpt": "Short preview text...",
-    "content": "<p>This is full content of the first post. It can have <strong>HTML</strong>.</p>",
-    "image": "/assets/img/post-image-1.png",
+    "content": "<p>Легендарный польский шутер вновь возвращается. Судя по трейлеру видно, что разработчики вдохновлялись новым Doom.</p>",
+    "image": "/assets/img/post-image-1.jpg",
     "date": "2025-08-13"
   },
   {
