@@ -13,14 +13,19 @@ const LanguageSwitcher = () => {
     navigate(`/${newLang}${withoutLang}`);
   };
 
+  // Возможные языки
+  const languages = ["en", "ru"];
+
+  // Оставляем только те, которые не совпадают с текущим
+  const availableLangs = languages.filter((l) => l !== lang);
+
   return (
     <div style={{ display: "flex", gap: "8px", color: "white" }}>
-      <button onClick={() => switchLanguage("en")} disabled={lang === "en"}>
-        EN
-      </button>
-      <button onClick={() => switchLanguage("ru")} disabled={lang === "ru"}>
-        RU
-      </button>
+      {availableLangs.map((l) => (
+        <button key={l} onClick={() => switchLanguage(l)}>
+          {l.toUpperCase()}
+        </button>
+      ))}
     </div>
   );
 };
