@@ -15,7 +15,7 @@ import News from "./page/News";
 import Services from "./page/Services";
 import Contact from "./page/Contact";
 
-// Главная страница
+// Home
 const Home = () => (
   <>
     <Header />
@@ -29,7 +29,7 @@ const Home = () => (
   </>
 );
 
-// Компонент для управления заголовком
+// Header Control Component
 function TitleManager() {
   const location = useLocation();
 
@@ -55,13 +55,13 @@ function TitleManager() {
     }
   }, [location]);
 
-  return null; // Этот компонент ничего не рендерит
+  return null; // No render!
 }
 
 function App() {
   return (
     <Router>
-      <TitleManager /> {/* Подключаем управление заголовком */}
+      <TitleManager /> {/* Connecting the header control */}
       <div className="bg-black min-h-screen">
         <div className="container mx-auto py-10">
           <Routes>

@@ -11,7 +11,7 @@ import Services from "./pages/Services";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
 
-// --- Автоперенаправление по языку ---
+// --- Auto redirect by language ---
 function LanguageRedirect() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -23,7 +23,7 @@ function LanguageRedirect() {
   return null;
 }
 
-// --- Управление title ---
+// --- Control title ---
 function TitleManager() {
   const { lang } = useParams();
   const { t, i18n } = useTranslation();
@@ -46,7 +46,7 @@ function TitleManager() {
   return null;
 }
 
-// --- Маршруты для выбранного языка ---
+// --- Routes for the selected language ---
 function LangRoutes() {
   const { lang } = useParams();
   const navigate = useNavigate();
