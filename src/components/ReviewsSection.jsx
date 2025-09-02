@@ -29,8 +29,8 @@ export default function ReviewsSection() {
   return (
     <section className="bg-[#1a1a1a] text-white py-16">
       <div className="container mx-auto px-4">
-        
-        {/* Заголовок */}
+
+        {/* Headline */}
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Trusted by Thousands of Happy Customer
@@ -40,7 +40,7 @@ export default function ReviewsSection() {
           </p>
         </div>
 
-        {/* Карточки */}
+        {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {reviews.map((r, idx) => (
             <ReviewCard key={idx} {...r} />

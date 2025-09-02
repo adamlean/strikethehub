@@ -12,8 +12,8 @@ const TrendingGames = () => {
   return (
     <section className="bg-black py-16 text-white">
       <div className="container mx-auto px-4">
-        
-        {/* Заголовок */}
+
+        {/* Headline */}
         <div className="flex justify-between items-center mb-10">
           <h2 className="text-2xl font-bold">Currently Trending Games</h2>
           <Link
@@ -24,7 +24,7 @@ const TrendingGames = () => {
           </Link>
         </div>
 
-        {/* Карточки игр */}
+        {/* Card game */}
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {games.map((game) => (
             <div key={game.id} className="text-center">

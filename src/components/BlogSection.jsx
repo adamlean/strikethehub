@@ -6,10 +6,10 @@ import postImage3 from "../assets/img/post-image-3.png";
 export default function NewsPage() {
   return (
     <>
-      {/* Главная секция с поиском и постами */}
+      {/* Main section with search and posts */}
       <section className="bg-black text-white py-16 px-4">
         <div className="container mx-auto max-w-7xl">
-          {/* Навигация */}
+          {/* Nav */}
           <nav className="text-sm text-gray-400 mb-4">
             <span>Home</span> &gt; <span className="text-orange-500">News</span>
           </nav>
@@ -25,7 +25,7 @@ export default function NewsPage() {
             </p>
           </div>
 
-          {/* Поиск */}
+          {/* Search */}
           <div className="flex justify-center mb-10">
             <input
               type="text"
@@ -34,9 +34,9 @@ export default function NewsPage() {
             />
           </div>
 
-          {/* Контент */}
+          {/* Content */}
           <div className="grid md:grid-cols-3 gap-10">
-            {/* Основные посты */}
+            {/* Main posts */}
             <div className="md:col-span-2 space-y-10">
               {[{ img: postImage1 }, { img: postImage3 }].map((post, idx) => (
                 <div key={idx} className="flex flex-col space-y-4">
@@ -58,7 +58,7 @@ export default function NewsPage() {
               ))}
             </div>
 
-            {/* Боковая лента новостей */}
+            {/* Side news feed */}
             <div className="space-y-6">
               {[...Array(5)].map((_, idx) => (
                 <div key={idx} className="flex items-start gap-4">

@@ -5,7 +5,7 @@ export default function StatsSection() {
   return (
     <section className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
-        {/* Заголовок */}
+        {/* Headline */}
         <div className="text-center space-y-4">
           <h2 className="text-2xl md:text-3xl font-bold">
             Lorem Ipsum is simply dummy text of the printing and.
@@ -15,17 +15,17 @@ export default function StatsSection() {
           </p>
         </div>
 
-        {/* Цифры */}
+        {/* Numbers */}
         <div className="bg-[#1e1e1e] rounded-lg flex flex-col md:flex-row justify-between items-center text-center mt-10 py-8 px-6 gap-6">
           <div className="max-w-5xl mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-10">
-              
+
               <StatItem icon={<FaUser />} value="90+" label="Clients" />
               <Divider />
               <StatItem icon={<FaMapMarkerAlt />} value="30+" label="Countries" />
               <Divider />
               <StatItem icon={<FaBriefcase />} value="50+" label="Projects" />
-              
+
             </div>
           </div>
         </div>

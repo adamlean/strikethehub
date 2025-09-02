@@ -7,7 +7,7 @@ const Header = () => {
   const { lang } = useParams();
   const { t, i18n } = useTranslation();
 
-  // Смена языка при смене URL
+  // Change language when changing URL
   React.useEffect(() => {
     if (lang) i18n.changeLanguage(lang);
   }, [lang, i18n]);

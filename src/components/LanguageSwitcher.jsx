@@ -13,10 +13,10 @@ const LanguageSwitcher = () => {
     navigate(`/${newLang}${withoutLang}`);
   };
 
-  // Возможные языки
+  // Languages
   const languages = ["en", "ru"];
 
-  // Оставляем только те, которые не совпадают с текущим
+  // We leave only those that do not match the current one.
   const availableLangs = languages.filter((l) => l !== lang);
 
   return (

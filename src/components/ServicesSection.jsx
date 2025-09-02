@@ -29,7 +29,7 @@ const ServicesSection = () => {
         </p>
 
         <div className="flex flex-col gap-10">
-          {/* Первая строка */}
+          {/* First string */}
           <div className="flex flex-wrap justify-between gap-7">
             {services.slice(0, 4).map((service, i) => (
               <div
@@ -49,7 +49,7 @@ const ServicesSection = () => {
             ))}
           </div>
 
-          {/* Вторая строка */}
+          {/* Second string */}
           <div className="flex flex-wrap justify-center gap-20">
             {services.slice(4).map((service, i) => (
               <div

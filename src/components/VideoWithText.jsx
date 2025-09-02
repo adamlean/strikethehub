@@ -6,8 +6,8 @@ export default function VideoWithText() {
     <section className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-          
-          {/* Видео */}
+
+          {/* Video */}
           <div className="relative w-full lg:w-1/2 max-w-lg">
             <img
               src="../assets/img/Hero Video.png"
@@ -19,7 +19,7 @@ export default function VideoWithText() {
             </button>
           </div>
 
-          {/* Текст */}
+          {/* Text */}
           <div className="lg:w-1/2 space-y-4">
             <h3 className="text-xl font-bold">Lorem Ipsum is simply dummy text.</h3>
             <p className="text-gray-400">
@@ -32,7 +32,7 @@ export default function VideoWithText() {
                     <FaCheckCircle className="text-green-500 mr-2 inline" />
                     {item}
                   </li>
-              ))}
+                ))}
             </ul>
           </div>
 

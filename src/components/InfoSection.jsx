@@ -4,16 +4,16 @@ const InfoSection = () => {
   return (
     <section className="bg-[#1a1a1a] py-20 text-white">
       <div className="container mx-auto px-4">
-        
-        {/* Заголовок */}
+
+        {/* Headline */}
         <h2 className="text-center text-2xl font-bold mb-14 leading-relaxed">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </h2>
 
-        {/* Контент */}
+        {/* Content */}
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start">
-          
-          {/* Текст */}
+
+          {/* Text */}
           <div className="max-w-[500px]">
             <h3 className="text-xl font-semibold mb-3">Lorem Ipsum</h3>
             <p className="text-sm leading-relaxed text-[#dddddd]">
@@ -22,7 +22,7 @@ const InfoSection = () => {
             </p>
           </div>
 
-          {/* Картинка */}
+          {/* Image */}
           <div className="relative">
             <img
               src="/assets/img/info-img.png"
