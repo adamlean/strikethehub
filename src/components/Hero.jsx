@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="hero py-16 bg-black text-white">
+    <section className="hero py-16 bg-black text-white bg-[url('/public/assets/img/hero-image.jpg')] bg-no-repeat bg-center bg-cover h-screen">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
-        
-        {/* Левая колонка */}
+
+        {/* Left Column */}
         <div className="hero-text max-w-lg mb-10 md:mb-0">
           <span className="subtitle text-orange-400 uppercase font-semibold tracking-wide">
             3D game Dev
@@ -27,7 +27,7 @@ const Hero = () => {
           </Link>
         </div>
 
-        {/* Правая колонка */}
+        {/* Right Column 
         <div className="hero-visual flex flex-col items-center">
           <img
             src="/assets/img/joy_stick 1.png"
@@ -39,7 +39,7 @@ const Hero = () => {
             <img src="/assets/svg/cry 1.svg" alt="CryEngine" />
             <img src="/assets/svg/unreal 1.svg" alt="Unreal Engine" />
           </div>
-        </div>
+        </div>*/}
       </div>
     </section>
   );
